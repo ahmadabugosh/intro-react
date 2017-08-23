@@ -8,39 +8,10 @@
 </title>
 <body>
 <div id="app"></div>
-<script src="node_modules/react/dist/react.js"></script>
-<script src="node_modules/react-dom/dist/react-dom.js"></script>
+<script src="public/bundle.js"></script>
+
 <script>
-const ce=React.createElement
 
-const myTitle =function(props) {
-
-return (
-	ce('div',null,
-		ce('h1',{style:{color:props.color}},props.title)
-	)
-)
-}
-
-
-
-
-const myFirstComponent =function() {
-
-return ce('div',{id:'my-first-component'},
-	ce(myTitle, {title:'Rick and Morty', color:'YellowGreen'}),
-	ce(myTitle, {title:'Stranger Things',color:'GreenYellow'}),
-	ce(myTitle, {title:'Better Call Saul',color:'LimeGreen'})
-	)
-
-
-}
-
-ReactDOM.render(
-	ce(myFirstComponent),
-	document.getElementById('app')
-
-	)
 
 </script>
 </body>
